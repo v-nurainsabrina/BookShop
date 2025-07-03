@@ -5,12 +5,18 @@
     "args": [],
     "tasks": [
         {
-            "taskName": "build",
+            "label": "build",
+            "type": "shell",
+            "command": "dotnet",
             "args": [
+                "build",
                 "${workspaceRoot}/BookShop.csproj"
             ],
-            "isBuildCommand": true,
-            "problemMatcher": "$msCompile"
+            "problemMatcher": "$msCompile",
+            "group": {
+                "_id": "build",
+                "isDefault": false
+            }
         }
     ]
 }
